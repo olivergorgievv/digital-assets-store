@@ -4,6 +4,7 @@ import Link from "next/link";
 import { icons } from "./icons";
 import NavItems from "./NavItems";
 import { buttonVariants } from "./ui/button";
+import Cart from "./Cart";
 
 export const Navbar = () => {
   const user = null;
@@ -63,7 +64,9 @@ export const Navbar = () => {
                       ></span>
                     </div>
                   )}
-                  <div className="ml-4 flow-root lg:ml-6">{/* <Cart /> */}</div>
+                  <div className="ml-4 flow-root lg:ml-6">
+                    <Cart />
+                  </div>
                 </div>
               </div>
             </div>
