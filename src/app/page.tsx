@@ -31,7 +31,7 @@ export default function Home() {
         <div className="py-20 mx-auto text-center flex flex-col items-center max-w-3xl">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             Your Marketplace for high quality{" "}
-            <span className="text-red-600">Digital assets</span>
+            <span className="text-primary">Digital assets</span>
           </h1>
           <p className="mt-6 text-large max-w-prose text-muted-foreground">
             Welcome to digitalStore. Every asset on our platform is verified by

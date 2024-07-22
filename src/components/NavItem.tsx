@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { PRODUCT_CATEGORIES } from "@/config";
-import { Button } from "./button";
+import { Button } from "./ui/button";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
