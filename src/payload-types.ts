@@ -68,5 +68,12 @@ export interface PayloadMigration {
 }
 
 declare module "payload" {
-  export interface GeneratedTypes extends Config {}
+  export interface Config {
+    collections: {
+      users: User;
+      "payload-preferences": PayloadPreference;
+      "payload-migrations": PayloadMigration;
+    };
+    globals: {};
+  }
 }
