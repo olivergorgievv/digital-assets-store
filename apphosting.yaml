@@ -1,0 +1,20 @@
+# Settings for Cloud Run
+runConfig:
+  minInstances: 2
+  maxInstances: 100
+  concurrency: 100
+  cpu: 2
+  memoryMiB: 1024
+
+# Environment variables and secrets
+env:
+  - variable: PAYLOAD_SECRET
+    secret: payloadSecretKey
+  - variable: MONGODB_URL
+    secret: mongoDbUrl
+    # Same as API_KEY above but with the long form secret reference as defined by Cloud Secret Manager.
+  - variable: NEXT_PUBLIC_SERVER_URL
+    value: http://localhost:3000
+    # Same as API_KEY above but with the long form secret reference with pinned version.
+  - variable: RESEND_API_KEY
+    secret: resendApiKey
